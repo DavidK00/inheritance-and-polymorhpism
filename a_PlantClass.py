@@ -1,5 +1,5 @@
 
-class Plant:
+class Plant: #superclass
     def __init__(self,color):
         self.__color = color
 
@@ -8,9 +8,9 @@ class Plant:
         return self.__color
 
 
-class Flower(Plant):
+class Flower(Plant):#subclass
     def __init__(self,color, petals):
-        Plant.__init__(self,color)
+        Plant.__init__(self,color)#init method of the superclass
 
         self.__petals = petals
 

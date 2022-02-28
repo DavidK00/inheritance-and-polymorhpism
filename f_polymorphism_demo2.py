@@ -27,6 +27,7 @@ def main():
 
 def show_mammal_info(creature):
     if isinstance(creature, animals.Mammal):
+        #checking to see if creature belongs to class
         creature.show_species()
         creature.make_sound()
     else:
